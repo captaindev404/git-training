@@ -8,3 +8,7 @@ const capitalize = (text) => {
 const formatDate = (dateString) => {
     return new Date(dateString)
 }
+
+const isPositiveNumber = (num) => {
+  return num > 0;
+}
