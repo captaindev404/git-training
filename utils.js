@@ -1,12 +1,18 @@
-const fullName = (first,last) => {
-    return `${first} -  ${last}`
+const fullName = (first, last) => {
+  return `${first} -  ${last}`
 }
 
 const capitalize = (text) => {
     return capitalize.toUpperCase()
 }
 const formatDate = (dateString) => {
-    return new Date(dateString)
+  if(dateString === '') {
+    return new Date()
+  }
+  if (dateString == null) {
+    throw new Error('datestring cannot be null')
+  }
+  return new Date(dateString)
 }
 
 const isPositiveNumber = (num) => {
