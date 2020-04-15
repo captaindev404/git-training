@@ -3,7 +3,10 @@ const fullName = (first, last) => {
 }
 
 const formatDate = (dateString) => {
-  if (dateString === null || dateString === undefined) {
+  if(dateString === '') {
+    return new Date()
+  }
+  if (dateString == null) {
     throw new Error('datestring cannot be null')
   }
   return new Date(dateString)
