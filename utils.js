@@ -3,5 +3,8 @@ const fullName = (first,last) => {
 }
 
 const formatDate = (dateString) => {
+    if(dateString === null || dateString === undefined) {
+        return new Date()
+    }
     return new Date(dateString)
 }
