@@ -3,8 +3,13 @@ const fullName = (first, last) => {
 }
 
 const capitalize = (text) => {
-    return capitalize.toUpperCase()
+    return text.toUpperCase()
 }
+
+const toLower = (text) => {
+    return text.toLowerCase()
+}
+
 const formatDate = (dateString) => {
   if(dateString === '') {
     return new Date()
