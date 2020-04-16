@@ -5,19 +5,15 @@ const fullName = (first, last) => {
 }
 
 const capitalize = (text) => {
-  return text.toUpperCase()
-}
-
-const tableize = (text) => {
-  return text.split(' ')
+    return text.toUpperCase()
 }
 
 const toLower = (text) => {
-  return text.toLowerCase()
+    return text.toLowerCase()
 }
 
 const formatDate = (dateString) => {
-  if (dateString === '') {
+  if(dateString === '') {
     return new Date()
   }
   if (dateString == null) {
