@@ -1,3 +1,5 @@
+import {multiply} from './math';
+
 const fullName = (first, last) => {
   return `${first} -  ${last}`
 }
@@ -20,19 +22,6 @@ const formatDate = (dateString) => {
   return new Date(dateString)
 }
 
-const isPositiveNumber = (num) => {
-  return num > 0;
+export const calculateTax = (amount, rate) => {
+  return multiply(amount, rate)
 }
-
-const add = (a,b) => {
-    return a + b;
-}
-
-const sum = (a,b) => {
-    return a * b;
-}
-
-const div = (a, b) => {
-    return a / b;
-}
-
