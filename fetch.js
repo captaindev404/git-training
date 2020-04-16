@@ -1,9 +1,5 @@
-const PUT_METHOD = 'put';
-const GET_METHOD = 'get'
-const OPTIONS_METHOD = 'options';
-const DELETE_METHOD = 'delete';
+import {DELETE_METHOD, OPTIONS_METHOD, POST_METHOD, PUT_METHOD} from './constats';
 
-const POST_METHOD = 'post'
 const postData = async (url ) => {
 
   return fetchData(url, { method: POST_METHOD});
